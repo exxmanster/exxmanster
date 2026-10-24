@@ -19,3 +19,6 @@
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
   <img src="assets/stats-light.svg" width="100%" alt="GitHub stats: years on GitHub, repositories, commits in the last year (public and private repos)">
 </picture>
+
+<img src="assets/contrib-terminal.svg" width="100%" alt="Contribution calendar for the last year, drawn as terminal output">
+
