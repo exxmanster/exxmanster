@@ -33,7 +33,8 @@ $ ./work --history
                    ├─ monitoring of an ad-tech (RTB) platform:
                    │  VictoriaMetrics, VMAlert, Alertmanager, Grafana, MetricsQL
                    ├─ scrape inventory as code: Python + Terraform → Prometheus file_sd
-                   └─ configuration management and containers: Ansible, Docker
+                   ├─ configuration management and containers: Ansible, Docker
+                   └─ AI-assisted operations with Claude Code
 2021-12 – 2022-04  DevOps Engineer @ Dev.Pro
                    └─ cloud administration, automation of services
 2020-04 – 2021-03  NOC Engineer @ Provectus
@@ -48,14 +49,23 @@ $ ./work --history
 2009 – 2014        earlier: web engineering, PC and network setup, tech support
 
 $ grep -r . ~/skills
-containers   Docker  Kubernetes  LXC  Vagrant
-iac          Terraform  Ansible
-ci-cd        GitHub Actions  Jenkins
-cloud        AWS (EC2, VPC, ALB, S3, ECS)  Cloudflare
-monitoring   VictoriaMetrics  VMAlert  Alertmanager  Grafana  Prometheus  Zabbix
-networking   TCP/IP  Nginx  MikroTik  multicast/unicast streaming
+containers   Docker  Docker Compose  Kubernetes  LXC  Vagrant
+iac          Terraform  Ansible  AWX  Jinja2
+ci-cd        GitLab CI  GitHub Actions  Jenkins (Groovy pipelines)
+cloud        AWS (EC2, VPC, ALB, S3, ECS, Route 53)  Cloudflare
+monitoring   VictoriaMetrics  VMAlert  Alertmanager  Grafana  Prometheus
+             Zabbix  custom exporters  promtool/amtool rule tests  Opsgenie
+data         ClickHouse
+dns          PowerDNS  gdnsd (GeoDNS)  MaxMind GeoIP
+networking   TCP/IP  iptables  nftables  Nginx  MikroTik  OpenVPN
+             multicast/unicast streaming
+linux        Debian packaging  aptly  systemd units/timers  logrotate
+             chrony  IPMI  SMART/NVMe
+security     nmap scanning  HashiCorp Vault  Ansible Vault
 os           Linux (Debian, Ubuntu, CentOS, Arch)  macOS
-scripting    Bash  Python
+scripting    Bash  Python (pytest, boto3, openpyxl)  Go (basics)
+apis         Grafana HTTP API  Notion API  Telegram Bot API
+ai           Claude Code
 streaming    Cesbo Astra  Flussonic  ffmpeg  udpxy
 
 $ cat ~/education.log
