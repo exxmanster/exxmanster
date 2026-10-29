@@ -24,69 +24,59 @@
 
 ## 📄 Resume
 
-**Dmytro Tiurikov** · DevOps Engineer · Ukraine · [LinkedIn](https://www.linkedin.com/in/dmytro-tiurikov-b01a68113/) · [GitHub](https://github.com/exxmanster)
+```console
+$ whoami
+Dmytro Tiurikov · DevOps Engineer · Ukraine · remote
 
-### Experience
+$ ./work --history
+2025-06 – now      DevOps Engineer @ Adtelligent Inc.
+                   ├─ monitoring of an ad-tech (RTB) platform:
+                   │  VictoriaMetrics, VMAlert, Alertmanager, Grafana, MetricsQL
+                   ├─ scrape inventory as code: Python + Terraform → Prometheus file_sd
+                   └─ configuration management and containers: Ansible, Docker
+2021-12 – 2022-04  DevOps Engineer @ Dev.Pro
+                   └─ cloud administration, automation of services
+2020-04 – 2021-03  NOC Engineer @ Provectus
+                   ├─ 24/7 monitoring, root cause analysis of alerts
+                   └─ troubleshooting by SOPs, incident tracking and escalation
+2019-05 – 2019-12  System Network Administrator / IPTV Engineer @ SOHONET
+                   └─ IPTV/OTT platform, network monitoring, content delivery automation
+2017-02 – 2018-01  L1 Support / IPTV Engineer @ Infomir
+                   └─ Ministra TV Platform, MAG set-top boxes, B2B and consumer support
+2011-01 – 2017-02  Freelance
+                   └─ Linux and Windows servers, websites, SEO, IT consulting
+2009 – 2014        earlier: web engineering, PC and network setup, tech support
 
-**Adtelligent Inc.** — DevOps Engineer · Jun 2025 – present · remote
-- Monitoring of an ad-tech (RTB) platform: VictoriaMetrics, VMAlert, Alertmanager, Grafana — alert rules, dashboards, MetricsQL queries
-- Scrape inventory as code: Python and Terraform generate Prometheus `file_sd` targets
-- Configuration management and containers with Ansible and Docker
+$ grep -r . ~/skills
+containers   Docker  Kubernetes  LXC  Vagrant
+iac          Terraform  Ansible
+ci-cd        GitHub Actions  Jenkins
+cloud        AWS (EC2, VPC, ALB, S3, ECS)  Cloudflare
+monitoring   VictoriaMetrics  VMAlert  Alertmanager  Grafana  Prometheus  Zabbix
+networking   TCP/IP  Nginx  MikroTik  multicast/unicast streaming
+os           Linux (Debian, Ubuntu, CentOS, Arch)  macOS
+scripting    Bash  Python
+streaming    Cesbo Astra  Flussonic  ffmpeg  udpxy
 
-**Dev.Pro** — DevOps Engineer · Dec 2021 – Apr 2022
-- Cloud administration and automation of services
+$ cat ~/education.log
+2004 – 2010  Odessa State Environmental University · Master of Computer Applications
+2026         DevOps and Kubernetes. Practical Intensive+ · GlobalLogic × Prometheus
+2018 – 2019  DevOps Fundamentals · Hillel IT School
+2018         Introduction to Python · Hillel IT School
+2016         Manual QA Fundamentals · KeepSolid IT School
 
-**Provectus** — Network Operations Center Engineer · Apr 2020 – Mar 2021
-- 24/7 monitoring of systems performance; root cause analysis of hardware, software and environment alerts
-- Triage and troubleshooting by SOPs, coordination with vendors and other IT teams
-- Incident tracking, documentation and escalation in the ticketing system
+$ locale -a | grep -E 'uk|en'
+uk_UA   native
+en_US   intermediate
+```
 
-**SOHONET** — System Network Administrator / IPTV Engineer · May 2019 – Dec 2019
-- Administration and support of the IPTV/OTT platform
-- Network and service monitoring
-- Automation of the content delivery process
+**Projects**
 
-**Infomir** — L1 Support Engineer / IPTV Engineer · Feb 2017 – Jan 2018
-- Solutions based on Ministra TV Platform (Stalker Middleware) and MAG set-top boxes
-- Support and troubleshooting for B2B and consumer clients; testing of MAGic apps for Android devices
-
-**Freelance** · Jan 2011 – Feb 2017
-- Remote administration of Linux and Windows servers, IT consulting
-- Websites on WordPress, Joomla, OpenCart; SEO
-
-**Earlier (2009 – 2014):** web engineering, PC and network setup, technical support in retail and remote roles
-
-### Skills
-
-| Area | Tools |
-|---|---|
-| **Containers** | Docker, Kubernetes, LXC, Vagrant |
-| **IaC & config** | Terraform, Ansible |
-| **CI/CD** | GitHub Actions, Jenkins |
-| **Cloud & edge** | AWS (EC2, VPC, ALB, S3, ECS), Cloudflare |
-| **Monitoring** | VictoriaMetrics, VMAlert, Alertmanager, Grafana, Prometheus, Zabbix, Nagios |
-| **Networking** | TCP/IP, Nginx, MikroTik, multicast/unicast streaming |
-| **OS** | Linux (Debian, Ubuntu, CentOS, Arch), macOS |
-| **Scripting** | Bash, Python |
-| **Streaming** | Cesbo Astra, Flussonic, ffmpeg, udpxy |
-
-### Selected projects
-
-- [DP_DevOps4](https://github.com/exxmanster/DP_DevOps4) — AWS blue/green environment: Terraform, Ansible, Jenkins pipelines with plan approval and region switch for DR
-- [Ansible_playground](https://github.com/exxmanster/Ansible_playground) — Ansible roles for a web stack on AWS EC2 with dynamic inventory and CloudWatch logs
+- [grafana-fleet-hardware](https://github.com/exxmanster/grafana-fleet-hardware) — Grafana dashboard for server fleet hardware from node_exporter, plain PromQL for Prometheus and VictoriaMetrics
+- [DP_DevOps4](https://github.com/exxmanster/DP_DevOps4) — AWS blue/green with Terraform, Ansible and Jenkins, region switch for DR
+- [Ansible_playground](https://github.com/exxmanster/Ansible_playground) — Ansible roles for a web stack on EC2 with dynamic inventory
 - [terraform.DP4](https://github.com/exxmanster/terraform.DP4) — Terraform for AWS: VPC, web and DB instances, state in S3
-- [edu-devops-k8s](https://github.com/exxmanster/edu-devops-k8s) — Go static server in a multi-arch `FROM scratch` image for GKE and Apple Silicon
+- [edu-devops-k8s](https://github.com/exxmanster/edu-devops-k8s) — Go server in a multi-arch `FROM scratch` image
 - [nginx-loadbalancer](https://github.com/exxmanster/nginx-loadbalancer) — Nginx load balancer in Docker
 
-### Education & courses
-
-- **Odessa State Environmental University** — Master of Computer Applications · 2004 – 2010
-- **DevOps and Kubernetes. Practical Intensive+** — GlobalLogic × Prometheus · 2026, in progress
-- **DevOps Fundamentals** — Hillel IT School · 2018 – 2019
-- **Introduction to Python** — Hillel IT School · 2018
-- **Manual QA Fundamentals** — KeepSolid IT School · 2016
-
-### Languages
-
-Ukrainian — native · English — intermediate
-
+**Contacts:** [LinkedIn](https://www.linkedin.com/in/dmytro-tiurikov-b01a68113/) · [GitHub](https://github.com/exxmanster)
